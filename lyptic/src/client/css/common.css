@@ -1,0 +1,83 @@
+/* Root */
+body {
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+.loading-status {
+    margin: 10px;
+}
+
+.root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Terminal core stuff */
+@keyframes cursor-blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.terminal-cursor {
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0);
+    margin-left: 5px;
+
+    animation-name: cursor-blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/* Terminal styling */
+.terminal-ui .title {
+    color: #a2d578;
+    text-shadow: 3px 3px #3b4b37;
+    font-size: 80px;
+}
+
+.terminal-ui .subtitle {
+    color: rgb(107, 213, 90);
+    text-decoration: underline;
+}
+
+.terminal-ui .text {
+    color: #b1b1b1;
+}
+
+.terminal-ui .link:before {
+    content: "> ";
+}
+
+.terminal-ui .link {
+    color: #3eb1ff;
+    cursor: pointer;
+}
+
+.terminal-ui .link:hover {
+    color: #6dc0ff;
+}
+
+.terminal-ui .text-input {
+    outline: none;
+    border: none;
+    background: #424242;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.32);
+    width: 25%;
+}

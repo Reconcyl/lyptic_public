@@ -1,0 +1,7 @@
+.menu.root {
+    background: #1d1d1d;
+    border: 10px solid #101010;
+    box-shadow: inset #101010 0 0 10px;
+    padding: 50px;
+    box-sizing: content-box;
+}
